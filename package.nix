@@ -1,4 +1,4 @@
-{ ps-pkgs, ... }: with ps-pkgs; {
+{ ps-pkgs, ps-pkgs-ns, ... }: with ps-pkgs; with ps-pkgs-ns; {
       dependencies = [
         aff
         argonaut
@@ -15,7 +15,7 @@
         integers
         lists
         maybe
-        mote
+        lovelaceAcademy.mote
         naturals
         newtype
         node-buffer
